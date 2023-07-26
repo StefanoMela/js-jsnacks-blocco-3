@@ -4,7 +4,7 @@
 
 // Chiedi all'utente un primo numero, poi un secondo e genera un numero casuale compreso tra i due.
 
-// generare random Numb fra due dati math.floor(math.random() )
+// generare random Numb fra due dati math.floor(math.random() * (max - min)) + min;
 
 // SVOLGIMENTO
 
