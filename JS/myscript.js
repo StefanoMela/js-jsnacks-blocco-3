@@ -63,21 +63,55 @@
 
 // # TRACCIA 4
 
+// SVOLGIMENTO
+
 // Crea un array vuoto e chiedi all'utente un numero da inserire nell'array. 
 // Continua a chiedere i numeri all'utente e a inserirli nell'array fino a quando la somma degli elementi è minore di 50.
-// Calcola la media dei numeri inseriti.
+// // Calcola la media dei numeri inseriti.
 
-const userArray = [];
-let totalSum = 0;
+// const userArray = [];
+// let totalSum = 0;
 
-while (totalSum < 50) {
+// while (totalSum < 50) {
     
-    let userNumber = parseInt(prompt("Dammi un numero"));
-    totalSum += userNumber;
-    userArray.push(userNumber);
+//     let userNumber = parseInt(prompt("Dammi un numero"));
+//     totalSum += userNumber;
+//     userArray.push(userNumber);
+// };
+
+// average = totalSum / userArray.length;
+
+// console.log(userArray);
+// console.log(average);
+
+// # TRACCIA 5
+
+// SVOLGIMENTO
+
+// Trovare gli errori nel seguente codice:
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+//     let evenNumbers = "";
+//     for (let i = 0; i < numbers.length - 1; i++;) {
+//         if (numbers % 2 = 0); {
+//             evenNumbers.push(i);
+//         }
+//     }
+//     console.log(evenNumbers);
+
+// dovrebbe restituire [1,3,5]
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+let evenNumbers = [];
+
+for (let i = 0; i < numbers.length - 1; i++) {
+
+    if (numbers[i] % 2 == 0) {
+
+        evenNumbers.push(i);
+    }
 };
+console.log(evenNumbers);
 
-average = totalSum / userArray.length;
-
-console.log(userArray);
-console.log(average);
+// dovrebbe restituire [1,3,5]
